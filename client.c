@@ -36,7 +36,7 @@ int main(int argc, char** argv) {
 
 	bzero((char*) &serverAddress, sizeof(serverAddress));
 	serverAddress.sin_family = AF_INET;
-	bcopy((char*) &server->h_addr, (char*) &serverAddress.sin_addr.s_addr, server->h_length);
+	bcopy((char*) server->h_addr, (char*) &serverAddress.sin_addr.s_addr, server->h_length);
 	serverAddress.sin_port = htons(portNumber);
 	if (connect(clientSocket, (struct sockaddr*) &serverAddress, sizeof(serverAddress)) < 0) {
 		error("Connection has failed");

@@ -56,7 +56,7 @@ int main(int argc, char** argv) {
 		message = read(newSocket, buffer, 255);
 		if (message < 0)
 			error("Error on reading message.");
-		printf("Client: %s\n", buffer);
+		printf("Client: %s", buffer);
 
 		//sending messages to the client
 		fgets(buffer, 255, stdin);
