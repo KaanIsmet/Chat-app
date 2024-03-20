@@ -1,4 +1,4 @@
-# Basic Chat Application using TCP Socket Programming
+# Simple Chat Application using TCP Socket Programming
 This is a simple chat application written in C using socket programming with TCP. The application allows the client to connect to a server and communicate with each other in real-time.
 
 ## Requirements
